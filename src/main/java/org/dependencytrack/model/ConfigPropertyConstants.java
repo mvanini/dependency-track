@@ -57,8 +57,10 @@ public enum ConfigPropertyConstants {
     KENNA_ENABLED("integrations", "kenna.enabled", "false", PropertyType.BOOLEAN, "Flag to enable/disable Kenna Security integration"),
     KENNA_SYNC_CADENCE("integrations", "kenna.sync.cadence", "60", PropertyType.INTEGER, "The cadence (in minutes) to upload to Kenna Security"),
     KENNA_TOKEN("integrations", "kenna.token", null, PropertyType.ENCRYPTEDSTRING, "The token to use when authenticating to Kenna Security"),
-    KENNA_CONNECTOR_ID("integrations", "kenna.connector.id", null, PropertyType.STRING, "The Kenna Security connector identifier to upload to");
-
+    KENNA_CONNECTOR_ID("integrations", "kenna.connector.id", null, PropertyType.STRING, "The Kenna Security connector identifier to upload to"),
+    TASKS_METRICS_PORTFOLIO_CADENCE("tasks", "metrics.portfolio.cadence", "60", PropertyType.INTEGER, "The cadence (in minutes) to perform porfolio metrics update"),
+    TASKS_METRICS_VULNERABILITY_CADENCE("tasks", "metrics.vulnerability.cadence", "60", PropertyType.INTEGER, "The cadence (in minutes) to perform vulnerability metrics update"),
+    TASKS_VULNERABILITY_ANALYSIS_CADENCE("tasks", "vulnerability.analysis.cadence", "360", PropertyType.INTEGER, "The cadence (in minutes) to perform vulnerability analysis");
 
     private String groupName;
     private String propertyName;
